@@ -18,16 +18,19 @@ class App extends React.Component {
     super(props);
     this.state = {
       device: "desktop",
+      width: 1500,
     };
   }
 
   componentDidMount() {
     this.setState({
       device: mediaQuery(window.innerWidth),
+      width: window.innerWidth,
     });
     window.addEventListener("resize", () => {
       this.setState({
         device: mediaQuery(window.innerWidth),
+        width: window.innerWidth,
       });
     });
   }
@@ -46,7 +49,7 @@ class App extends React.Component {
             <Route exact path="/">
               <Home />
               <AboutMe />
-              <FindMe />
+              <FindMe windowWidth={this.state.width} />
             </Route>
             <Route path="/projects">
               <Projects />

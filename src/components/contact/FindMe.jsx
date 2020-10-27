@@ -3,23 +3,33 @@ import ContentContainer from "../content-container/ContentContainer";
 import Maps from "./Maps";
 import Contact from "./Contact";
 
-import { Container, Row, Col } from "react-bootstrap";
-
 class FindMe extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      containerPadding: 0,
+    };
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.windowWidth !== this.props.windowWidth) {
+      let maps = document.querySelector(".maps-container");
+      let sidebar = document.querySelector(".sidebar");
+      let containerElem = document.querySelector("#findme .content-container");
+      containerElem.style.margin = 0;
+      containerElem.style["padding-left"] = `${
+        sidebar.offsetWidth +
+        (this.props.windowWidth - sidebar.offsetWidth - maps.offsetWidth) / 2
+      }px`;
+    }
+  }
+
   render() {
     return (
       <div id="findme">
         <ContentContainer>
-          <Container style={{}}>
-            <Row>
-              <Col sm={6}>
-                <Contact />
-              </Col>
-              <Col sm={6}>
-                <Maps />
-              </Col>
-            </Row>
-          </Container>
+          <Contact />
+          <Maps />
         </ContentContainer>
       </div>
     );

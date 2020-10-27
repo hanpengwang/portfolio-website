@@ -1,32 +1,25 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
+import "./Contact.css";
 
 class Contact extends React.Component {
-  styles = {
-    border: "3px dashed black",
-    height: "100vh",
-  };
-
   render() {
     return (
-      <div style={this.styles}>
-        <Form>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Control
-              type="email"
-              placeholder="Add Your Message Here"
-              style={{ height: "25vw" }}
-            />
-          </Form.Group>
-          <Button
-            variant="primary"
-            onClick={() => {
-              alert("send msg");
-            }}
-          >
-            SEND
-          </Button>
-        </Form>
+      <div className="container-form">
+        <form
+          onSubmit={(e) => {
+            alert("sent msg");
+            e.preventDefault();
+          }}
+        >
+          <input type="text" placeholder="Email" />
+
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Message goes here"
+          ></textarea>
+          <input type="submit" value="SEND" />
+        </form>
       </div>
     );
   }

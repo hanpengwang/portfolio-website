@@ -42,52 +42,6 @@ export default function NavBar(props) {
   ];
 
   return (
-    // <>
-    //   <Navbar fixed="top" style={styles} className="nav-bar-ok">
-    //     <Nav activeKey="/home" className="flex-column">
-    //       <Nav.Item>
-    //         <h1 className="menu-open" onClick={openMenu}>
-    //           open
-    //         </h1>
-    //       </Nav.Item>
-
-    //       {navItemsInfo.map((item, index) => {
-    //         return <a href={item.link}>{item.text}</a>;
-    //       })}
-
-    //       <Nav.Item>
-    //         <Nav.Link href="/#home">Home</Nav.Link>
-    //       </Nav.Item>
-
-    //       <Nav.Item>
-    //         <Nav.Link href="/#aboutme">About me</Nav.Link>
-    //       </Nav.Item>
-    //       <Nav.Item>
-    //         <Nav.Link href="/#findme">Find Me</Nav.Link>
-    //       </Nav.Item>
-    //       <Nav.Item>
-    //         <Nav.Link href="/blogs">Blogs</Nav.Link>
-    //       </Nav.Item>
-    //       <Nav.Item>
-    //         <Nav.Link href="/projects">Projects</Nav.Link>
-    //       </Nav.Item>
-    //       <div style={socialStyles}>
-    //         <Nav.Item>
-    //           <Nav.Link href="/">Social 1</Nav.Link>
-    //         </Nav.Item>
-    //         <Nav.Item>
-    //           <Nav.Link href="/">Social 2</Nav.Link>
-    //         </Nav.Item>
-    //         <Nav.Item>
-    //           <Nav.Link href="/">Social 3</Nav.Link>
-    //         </Nav.Item>
-    //         <Nav.Item>
-    //           <Nav.Link href="/">Social 4</Nav.Link>
-    //         </Nav.Item>
-    //       </div>
-    //     </Nav>
-    //   </Navbar>
-    // </>
     <div className="sidebar">
       <div
         className={`burger-menu${menuOpened ? " change" : ""}`}

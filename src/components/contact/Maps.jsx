@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
+import "./Maps.css";
 const dotenv = require("dotenv");
 
 class Maps extends Component {
@@ -37,13 +38,8 @@ class Maps extends Component {
 
   render() {
     return (
-      <div>
-        <div
-          style={{
-            height: "100vh",
-            opacity: "0.7",
-          }}
-        >
+      <>
+        <div className="maps-container">
           <GoogleMapReact
             bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_KEY_DEV }}
             defaultCenter={this.props.center}
@@ -53,7 +49,7 @@ class Maps extends Component {
             <MarkerMe lat={this.props.center.lat} lng={this.props.center.lng} />
           </GoogleMapReact>
         </div>
-      </div>
+      </>
     );
   }
 }
