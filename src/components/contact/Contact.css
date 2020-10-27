@@ -3,7 +3,6 @@
 }
 
 input[type="text"],
-select,
 textarea {
   width: 100%;
   padding: 12px;
@@ -14,14 +13,25 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+textarea {
+  height: calc((47vh - 48px) * 0.7);
+  max-height: 300px;
+}
 
 input[type="submit"] {
+  position: relative;
+  float: right;
+  top: -56px;
   background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
+  opacity: 0.2;
   cursor: pointer;
+}
+input[type="submit"]:hover {
+  opacity: 1;
 }
 
 input[type="submit"]:hover {
@@ -32,9 +42,8 @@ input[type="submit"]:hover {
   height: 47vh;
   max-height: var(--contact-height);
   max-width: 840px;
-  border: 3px dashed black;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: rgba(221, 221, 221, 0.5);
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -52,5 +61,8 @@ input[type="submit"]:hover {
       100vw - 2 * var(--menu-width)
     ); /*menu width of navbar in mobile view */
     height: 300px;
+  }
+  textarea {
+    height: calc((300px - 48px) * 0.7);
   }
 }

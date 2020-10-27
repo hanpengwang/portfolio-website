@@ -13,11 +13,7 @@ class Contact extends React.Component {
         >
           <input type="text" placeholder="Email" />
 
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Message goes here"
-          ></textarea>
+          <textarea id="subject" placeholder="Message goes here"></textarea>
           <input type="submit" value="SEND" />
         </form>
       </div>
