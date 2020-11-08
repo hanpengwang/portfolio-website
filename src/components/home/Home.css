@@ -1,0 +1,31 @@
+.python-staticmethod,
+.python-def {
+  margin-left: 30px;
+}
+
+.python-pass,
+.python-self {
+  margin-left: 60px;
+}
+
+.python-staticmethod,
+.python-argSelf,
+.python-self {
+  font-style: italic;
+  color: brown;
+}
+
+.python-class,
+.python-pass,
+.python-def {
+  color: blue;
+}
+
+.python-inheritObject {
+  color: purple;
+}
+
+.python-input-code,
+.python-code p {
+  margin-bottom: 5px;
+}
