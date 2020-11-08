@@ -34,10 +34,6 @@ input[type="submit"]:hover {
   opacity: 1;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
 .container-form {
   height: 47vh;
   max-height: var(--contact-height);
