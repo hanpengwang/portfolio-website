@@ -16,6 +16,7 @@ textarea {
 textarea {
   height: calc((47vh - 48px) * 0.7);
   max-height: 300px;
+  border: black 2px;
 }
 
 input[type="submit"] {
