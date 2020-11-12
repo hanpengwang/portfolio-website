@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
     boxShadow: "0px 0px 10px 1px rgba(224,224,224,1)",
   };
   return (
-    <Card style={cardStyles}>
+    <Card style={cardStyles} className={props.className}>
       <Card.Img src={props.media} style={{ width: "auto", height: "50%" }} />
       <Card.Body>
         <Card.Title>{"project " + props.title}</Card.Title>

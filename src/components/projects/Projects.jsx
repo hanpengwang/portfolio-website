@@ -3,6 +3,8 @@ import React from "react";
 import ContentContainer from "../content-container/ContentContainer";
 import ProjectCard from "./ProjectCard";
 
+import "./Projects.css";
+
 class Projects extends React.Component {
   constructor(props) {
     super(props);
@@ -24,7 +26,12 @@ class Projects extends React.Component {
         body: JSON.stringify(this.state.form),
       });
       const res = await rawResponse.json();
-      this.setState({ projectData: res.projects });
+      // this.setState({ projectData: res.projects });
+      let tempArr = [];
+      for (let index = 0; index < 10; index++) {
+        tempArr.push(res.projects[0]);
+      }
+      this.setState({ projectData: tempArr });
     })();
   }
   render() {
@@ -39,6 +46,7 @@ class Projects extends React.Component {
                 text={x.projectDesc}
                 link={x.projectLink}
                 key={i}
+                className={`slide-in ${i % 2 ? "from-right" : "from-left"}`}
               />
             );
           })}
