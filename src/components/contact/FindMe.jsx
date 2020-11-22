@@ -29,7 +29,10 @@ class FindMe extends React.Component {
       <div id="findme">
         <ContentContainer>
           <Contact />
-          <Maps />
+          <Maps
+            setFullPage={this.props.setFullPage}
+            device={this.props.device}
+          />
         </ContentContainer>
       </div>
     );

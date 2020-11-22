@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { FullPage, Slide } from "react-full-page";
 
 import LoadingScreen from "./components/LoadingScreen";
 import VideoBackground from "./components/VideoBackground";
@@ -20,8 +21,15 @@ class App extends React.Component {
     this.state = {
       device: "desktop",
       width: 1500,
+      FullPageMode: "full-page", // "full-page" will eable scroll effect, "normal" disables effect
     };
   }
+
+  setFullPage = () => {
+    let pageMode =
+      this.state.FullPageMode == "full-page" ? "normal" : "full-page";
+    this.setState({ FullPageMode: pageMode });
+  };
 
   componentDidMount() {
     this.setState({
@@ -58,9 +66,21 @@ class App extends React.Component {
           <VideoBackground />
           <Switch>
             <Route exact path="/">
-              <Home />
-              <AboutMe />
-              <FindMe windowWidth={this.state.width} />
+              <FullPage duration={100} scrollMode={this.state.FullPageMode}>
+                <Slide>
+                  <Home />
+                </Slide>
+                <Slide>
+                  <AboutMe />
+                </Slide>
+                <Slide>
+                  <FindMe
+                    windowWidth={this.state.width}
+                    setFullPage={this.setFullPage}
+                    device={this.state.device}
+                  />
+                </Slide>
+              </FullPage>
             </Route>
             <Route path="/projects">
               <Projects />
@@ -79,6 +99,7 @@ const mediaQuery = (width) => {
   if (width > 768) {
     return "desktop";
   } else if (width >= 600 && width <= 770) {
+    // expect bugs on super large tablet, solve this as to do
     return "tablet";
   } else {
     return "phone";
