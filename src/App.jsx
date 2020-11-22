@@ -3,6 +3,7 @@ import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import LoadingScreen from "./components/LoadingScreen";
 import VideoBackground from "./components/VideoBackground";
 import NavBar from "./components/navbar/NavBar";
 import AboutMe from "./components/AboutMe";
@@ -33,6 +34,11 @@ class App extends React.Component {
         width: window.innerWidth,
       });
     });
+
+    //  hide loading screen after first run
+    setTimeout(() => {
+      sessionStorage.setItem("showLoadingScreen", "false");
+    }, 2000);
   }
 
   styles = {
@@ -43,6 +49,11 @@ class App extends React.Component {
     return (
       <Router>
         <div style={this.styles} className="app">
+          {sessionStorage.getItem("showLoadingScreen") == "false" ? (
+            <></>
+          ) : (
+            <LoadingScreen />
+          )}
           <NavBar device={this.state.device} />
           <VideoBackground />
           <Switch>
