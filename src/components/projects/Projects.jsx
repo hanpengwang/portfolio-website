@@ -26,12 +26,7 @@ class Projects extends React.Component {
         body: JSON.stringify(this.state.form),
       });
       const res = await rawResponse.json();
-      // this.setState({ projectData: res.projects });
-      let tempArr = [];
-      for (let index = 0; index < 10; index++) {
-        tempArr.push(res.projects[0]);
-      }
-      this.setState({ projectData: tempArr });
+      this.setState({ projectData: res.projects });
     })();
   }
   render() {
