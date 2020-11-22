@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function NavBar(props) {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -42,7 +42,16 @@ export default function NavBar(props) {
   ];
 
   return (
-    <div className="sidebar">
+    <div
+      className="sidebar"
+      style={{
+        animationName: `${
+          sessionStorage.getItem("showLoadingScreen") == "false"
+            ? ""
+            : "fade-in-nav"
+        }`,
+      }}
+    >
       <div
         className={`burger-menu${menuOpened ? " change" : ""}`}
         onClick={openMenu}

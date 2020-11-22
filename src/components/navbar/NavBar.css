@@ -16,6 +16,19 @@
   height: 100%;
   overflow: hidden;
   z-index: 2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-nav {
+  0%,
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .sidebar a {
