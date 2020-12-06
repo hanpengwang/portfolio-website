@@ -10,8 +10,7 @@ export default function VideoBackground(props) {
   return (
     <div>
       <video
-        // src="https://static.videezy.com/system/resources/previews/000/033/108/original/4k-abstract-gold-mountains-polygons-background-loop-final.mp4"
-        src={backgroundVideo}
+        src="https://github.com/whpskg/portfolio-website/blob/master/src/assets/background-video-circle.mp4?raw=true"
         autoPlay
         loop
         playsInline

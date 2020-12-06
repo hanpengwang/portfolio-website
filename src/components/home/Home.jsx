@@ -69,7 +69,7 @@ class Home extends React.Component {
     return (
       <div id="home">
         <ContentContainer>
-          {/* <Typist
+          <Typist
             cursor={{
               show: false,
             }}
@@ -81,73 +81,74 @@ class Home extends React.Component {
             onCharacterTyped={(char) => {}}
             onTypingDone={this.handleTypingDone}
           >
-               </Typist> */}
-          <div className="python-code">
-            <p>
-              <span className="python-class">Class </span>
-              <span>
-                Hanpeng_Dev(
-                <span className="python-inheritObject">object</span>
-                ):
-              </span>
-            </p>
-            <p>
-              <span className="python-def">def </span>
-              <span>
-                __init__(<span className="python-argSelf">self</span>):
-              </span>
-            </p>
-            <p>
-              <span className="python-self">self</span>
-              <span>.last_name = </span>
-              <span className="python-var-value">"Wang"</span>
-            </p>
-            <p>
-              <span className="python-self">self</span>
-              <span>.first_name = </span>
-              <span className="python-var-value">"Hanpeng"</span>
-            </p>
-            <p>
-              <span className="python-self">self</span>
-              <span>.中文名 = </span>
-              <span className="python-var-value">"王瀚鹏"</span>
-            </p>
-            <p>
-              <span className="python-self">self</span>
-              <span>.yoe = </span>
-              <span className="python-var-value">"3 years"</span>
-            </p>
-            <p>
-              <span className="python-self">self</span>
-              <span>.fav_lang = </span>
-              <span className="python-var-value">"Python"</span>
-            </p>
+            <div className="python-code">
+              <p>
+                <span className="python-class">Class </span>
+                <span>
+                  Hanpeng_Dev(
+                  <span className="python-inheritObject">object</span>
+                  ):
+                </span>
+              </p>
+              <p>
+                <span className="python-def">def </span>
+                <span>
+                  __init__(<span className="python-argSelf">self</span>):
+                </span>
+              </p>
+              <p>
+                <span className="python-self">self</span>
+                <span>.last_name = </span>
+                <span className="python-var-value">"Wang"</span>
+              </p>
+              <p>
+                <span className="python-self">self</span>
+                <span>.first_name = </span>
+                <span className="python-var-value">"Hanpeng"</span>
+              </p>
+              <p>
+                <span className="python-self">self</span>
+                <span>.中文名 = </span>
+                <span className="python-var-value">"王瀚鹏"</span>
+              </p>
+              <p>
+                <span className="python-self">self</span>
+                <span>.yoe = </span>
+                <span className="python-var-value">"3 years"</span>
+              </p>
+              <p>
+                <span className="python-self">self</span>
+                <span>.fav_lang = </span>
+                <span className="python-var-value">"Python"</span>
+              </p>
 
-            <p>
-              <span className="python-self">self</span>
-              <span>.cur_res = </span>
-              <span className="python-var-value">"Canada, NS"</span>
-            </p>
-            <p>
-              <span className="python-self">self</span>
-              <span>.relocation_pref = </span>
-              <span className="python-var-value">"Anywhere in the world"</span>
-            </p>
+              <p>
+                <span className="python-self">self</span>
+                <span>.cur_res = </span>
+                <span className="python-var-value">"Canada, NS"</span>
+              </p>
+              <p>
+                <span className="python-self">self</span>
+                <span>.relocation_pref = </span>
+                <span className="python-var-value">
+                  "Anywhere in the world"
+                </span>
+              </p>
 
-            <p className="python-staticmethod">@staticmethod</p>
-            <p>
-              <span className="python-def">def </span>
-              <span>get_contact():</span>
-            </p>
-            <p className="python-pass">pass</p>
-            <p className="python-staticmethod">@staticmethod</p>
-            <p>
-              <span className="python-def">def </span>
-              <span>show_me_your_code():</span>
-            </p>
-            <p className="python-pass">pass</p>
-          </div>
-
+              <p className="python-staticmethod">@staticmethod</p>
+              <p>
+                <span className="python-def">def </span>
+                <span>get_contact():</span>
+              </p>
+              <p className="python-pass">pass</p>
+              <p className="python-staticmethod">@staticmethod</p>
+              <p>
+                <span className="python-def">def </span>
+                <span>show_me_your_code():</span>
+              </p>
+              <p className="python-pass">pass</p>
+            </div>
+          </Typist>
           <>
             {/* add input code */}
             {this.state.codeInputs.map((element, i) => {
