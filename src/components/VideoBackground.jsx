@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import backgroundVideo from "../assets/background-video-circle.mp4";
 
 export default function VideoBackground(props) {
   useEffect(() => {
