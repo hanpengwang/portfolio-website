@@ -58,7 +58,7 @@ class Maps extends Component {
           }
         >
           <GoogleMapReact
-            bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_KEY }}
+            bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_KEY_DEV }}
             defaultCenter={this.props.center}
             zoom={this.props.zoom}
             options={this.mapOptions}

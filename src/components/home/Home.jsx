@@ -73,12 +73,15 @@ class Home extends React.Component {
             cursor={{
               show: false,
             }}
+            startDelay={
+              sessionStorage.getItem("showLoadingScreen") == "false" ? 0 : 2000
+            }
             avgTypingDelay={0}
             stdTypingDelay={0}
             onCharacterTyped={(char) => {}}
             onTypingDone={this.handleTypingDone}
           >
-                 </Typist> */}
+               </Typist> */}
           <div className="python-code">
             <p>
               <span className="python-class">Class </span>
@@ -156,6 +159,7 @@ class Home extends React.Component {
             })}
             <br />
           </>
+
           <input
             type="text"
             ref={this.codeInputRef}

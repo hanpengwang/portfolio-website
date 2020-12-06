@@ -8,7 +8,7 @@
   padding: 24vh 0 0 0;
   width: 10vw;
   max-width: 150px;
-  background-color: #f1f1f1;
+  background-color: #282828;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
 
 .sidebar a {
   display: block;
-  color: black;
+  color: #00c9c8;
   padding: 16px;
   text-decoration: none;
 }
@@ -62,7 +62,7 @@
 .bar3 {
   width: 40px;
   height: 5px;
-  background-color: #333;
+  background-color: #00c9c8;
   margin: 6px 0;
   transition: 0.4s;
 }

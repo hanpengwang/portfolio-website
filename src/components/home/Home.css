@@ -12,20 +12,28 @@
 .python-argSelf,
 .python-self {
   font-style: italic;
-  color: brown;
+  color: #ec87e4;
 }
 
 .python-class,
 .python-pass,
 .python-def {
-  color: blue;
+  color: #00c9c8;
+}
+
+.python-var-value {
+  color: white;
 }
 
 .python-inheritObject {
-  color: purple;
+  color: #81a2be;
 }
 
 .python-input-code,
 .python-code p {
   margin-bottom: 5px;
+}
+
+.python-code {
+  color: #eab700;
 }
