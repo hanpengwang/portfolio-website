@@ -32,7 +32,10 @@ class Contact extends React.Component {
                 display: this.state.displayInvalidEmail ? "inline" : "none",
               }}
             >
-              would appreacite your real email address 😂
+              would appreacite your real email address{" "}
+              <span role="img" aria-label="">
+                😂
+              </span>
             </label>
             <br />
             <label
@@ -41,7 +44,10 @@ class Contact extends React.Component {
                 display: this.state.displayInvalidContent ? "inline" : "none",
               }}
             >
-              send me something 👍
+              a small word makes big difference{" "}
+              <span role="img" aria-label="">
+                👍
+              </span>
             </label>
           </>
           <textarea
@@ -112,7 +118,7 @@ class Contact extends React.Component {
   };
 
   validateEmail(email) {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     return re.test(String(email).toLowerCase());
   }
 }

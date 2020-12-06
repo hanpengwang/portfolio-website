@@ -15,8 +15,4 @@ const blogCotainerStyles = {
   margin: "40px 100px 0px 100px",
 };
 
-const htmlStr = () => {
-  return { __html: "" };
-};
-
 export default BlogPage;

@@ -1,8 +1,6 @@
 import React from "react";
 import ContentContainer from "../content-container/ContentContainer";
 import Typist from "react-typist";
-import Keyboard from "./Keyboard";
-import Peng from "../peng/Peng";
 
 import "./Home.css";
 
@@ -19,7 +17,7 @@ class Home extends React.Component {
   handleCodeEnter = (e) => {
     let codeValue = e.target.value;
 
-    if (e.key == "Enter") {
+    if (e.key === "Enter") {
       this.codeInputRef.current.placeholder = "";
       this.setState({
         codeInputs: [...this.state.codeInputs, codeValue],
@@ -74,7 +72,7 @@ class Home extends React.Component {
               show: false,
             }}
             startDelay={
-              sessionStorage.getItem("showLoadingScreen") == "false" ? 0 : 2000
+              sessionStorage.getItem("showLoadingScreen") === "false" ? 0 : 2000
             }
             avgTypingDelay={0}
             stdTypingDelay={0}
@@ -172,25 +170,25 @@ class Home extends React.Component {
   }
 }
 
-const myIntro = `class Hanpeng_Dev(object):
+// const myIntro = `class Hanpeng_Dev(object):
 
-def __init__(self):
-    self.last_name = "Wang"
-    self.first_name = "Hanpeng"
-    self.中文名 = "王瀚鹏"
-    self.yoe = "3 years"
-    self.fav_lang = "Python"
-    self.cur_res = "Canada, NS"
-    self.relocation_pref = "Anywhere in the World"
-    
-@staticmethod
-def get_contact():
-    pass
+// def __init__(self):
+//     self.last_name = "Wang"
+//     self.first_name = "Hanpeng"
+//     self.中文名 = "王瀚鹏"
+//     self.yoe = "3 years"
+//     self.fav_lang = "Python"
+//     self.cur_res = "Canada, NS"
+//     self.relocation_pref = "Anywhere in the World"
 
-@staticmethod
-def show_me_your_code():
-    pass
+// @staticmethod
+// def get_contact():
+//     pass
 
-`;
+// @staticmethod
+// def show_me_your_code():
+//     pass
+
+// `;
 
 export default Home;

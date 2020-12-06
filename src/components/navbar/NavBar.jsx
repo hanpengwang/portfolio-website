@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export default function NavBar(props) {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -46,7 +46,7 @@ export default function NavBar(props) {
       className="sidebar"
       style={{
         animationName: `${
-          sessionStorage.getItem("showLoadingScreen") == "false"
+          sessionStorage.getItem("showLoadingScreen") === "false"
             ? ""
             : "fade-in-nav"
         }`,
@@ -65,13 +65,13 @@ export default function NavBar(props) {
         {navItemsInfo.map((item, index) => {
           return (
             <a href={item.link} key={index}>
-              {props.device != "phone" ? (
+              {props.device !== "phone" ? (
                 <></>
               ) : (
                 <i className={item.iconClass} onClick={openMenu}></i>
               )}
 
-              {props.device != "phone" ? item.text : ""}
+              {props.device !== "phone" ? item.text : ""}
             </a>
           );
         })}
@@ -79,7 +79,12 @@ export default function NavBar(props) {
         <div className="social-link-group">
           {socialLinks.map((item, index) => {
             return (
-              <a href={item.link} target="_blank" key={index}>
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+              >
                 <i className={item.iconClass}></i>
               </a>
             );

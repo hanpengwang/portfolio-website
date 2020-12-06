@@ -3,7 +3,7 @@ import "./Blog.css";
 import ContentContainer from "../content-container/ContentContainer";
 import BlogPage from "./BlogPage";
 import BlogCard from "./BlogCard";
-import { Switch, Route, useParams } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 class Blogs extends React.Component {
   render() {

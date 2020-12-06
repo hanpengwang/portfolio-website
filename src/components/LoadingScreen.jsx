@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Peng from "./peng/Peng";
 
 import "./LoadingScreen.css";

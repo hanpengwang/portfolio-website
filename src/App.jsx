@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { FullPage, Slide } from "react-full-page";
 
 import LoadingScreen from "./components/LoadingScreen";
@@ -27,7 +27,7 @@ class App extends React.Component {
 
   setFullPage = () => {
     let pageMode =
-      this.state.FullPageMode == "full-page" ? "normal" : "full-page";
+      this.state.FullPageMode === "full-page" ? "normal" : "full-page";
     this.setState({ FullPageMode: pageMode });
   };
 
@@ -57,7 +57,7 @@ class App extends React.Component {
     return (
       <Router>
         <div style={this.styles} className="app">
-          {sessionStorage.getItem("showLoadingScreen") == "false" ? (
+          {sessionStorage.getItem("showLoadingScreen") === "false" ? (
             <></>
           ) : (
             <LoadingScreen />

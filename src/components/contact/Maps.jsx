@@ -2,13 +2,8 @@ import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 import "./Maps.css";
 import logo from "../../assets/logo.png";
-const dotenv = require("dotenv");
 
 class Maps extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   // disable slide effect when drag and enable when drag end
 
   static defaultProps = {
@@ -71,7 +66,7 @@ class Maps extends Component {
   }
 }
 
-const MarkerMe = ({}) => (
+const MarkerMe = () => (
   <div
     style={{
       height: "60px",
@@ -82,7 +77,7 @@ const MarkerMe = ({}) => (
       opacity: "0.7",
     }}
   >
-    <img src={logo} style={{ width: "50px", height: "50px" }} />
+    <img src={logo} style={{ width: "50px", height: "50px" }} alt="" />
   </div>
 );
 
