@@ -15,7 +15,7 @@ class FindMe extends React.Component {
     if (prevProps.windowWidth !== this.props.windowWidth) {
       let maps = document.querySelector(".maps-container");
       let sidebar = document.querySelector(".sidebar");
-      let containerElem = document.querySelector("#findme .content-container");
+      let containerElem = document.querySelector(".findme .content-container");
       containerElem.style.margin = 0;
       containerElem.style["padding-left"] = `${
         sidebar.offsetWidth +
@@ -26,7 +26,7 @@ class FindMe extends React.Component {
 
   render() {
     return (
-      <div id="findme">
+      <div className="section findme">
         <ContentContainer>
           <Contact />
           <Maps

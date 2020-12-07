@@ -6,7 +6,7 @@ class AboutMe extends React.Component {
 
   render() {
     return (
-      <div id="aboutme">
+      <div className="section">
         <ContentContainer>
           <h1>Who's Hanpeng?</h1>
           <p spellCheck="true">

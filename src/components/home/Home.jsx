@@ -44,7 +44,6 @@ class Home extends React.Component {
 
   handleTypingDone = () => {
     let inputEle = this.codeInputRef.current;
-    inputEle.focus();
     this.inputTyping(inputEle);
   };
 
@@ -65,8 +64,8 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div id="home">
-        <ContentContainer>
+      <div className="section">
+        <ContentContainer style={{ paddingTop: "7vh" }}>
           <Typist
             cursor={{
               show: false,
