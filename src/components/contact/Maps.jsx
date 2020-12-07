@@ -23,17 +23,22 @@ class Maps extends Component {
     styles: [
       {
         featureType: "water",
-        stylers: [{ color: "#0C0000FF" }],
+        stylers: [{ color: "#000000" }],
       },
+
       {
-        featureType: "road.arterial",
-        elementType: "geometry",
-        stylers: [{ color: "#CCFFFF" }],
+        featureType: "road",
+        stylers: [{ color: "#00c9c8" }],
+      },
+
+      {
+        featureType: "administrative",
+        stylers: [{ visibility: "off" }],
       },
       {
         featureType: "landscape",
-        elementType: "labels",
-        stylers: [{ visibility: "off" }],
+
+        stylers: [{ color: "#ffffff" }],
       },
     ],
   };
@@ -43,13 +48,25 @@ class Maps extends Component {
       <>
         <div
           className="maps-container"
-          onMouseEnter={this.props.setFullPage}
-          onMouseLeave={this.props.setFullPage}
+          onMouseEnter={() => {
+            this.props.setFullPage(false);
+          }}
+          onMouseLeave={() => {
+            this.props.setFullPage(true);
+          }}
           onTouchStart={
-            this.props.device !== "desktop" ? this.props.setFullPage : null
+            this.props.device !== "desktop"
+              ? () => {
+                  this.props.setFullPage(false);
+                }
+              : null
           }
           onTouchEnd={
-            this.props.device !== "desktop" ? this.props.setFullPage : null
+            this.props.device !== "desktop"
+              ? () => {
+                  this.props.setFullPage(true);
+                }
+              : null
           }
         >
           <GoogleMapReact
@@ -74,7 +91,9 @@ const MarkerMe = () => (
       borderRadius: "50%",
       backgroundColor: "#00c9c8",
       padding: "2px 0 0 2px",
-      opacity: "0.7",
+      opacity: "1",
+      position: "relative",
+      top: "-10px",
     }}
   >
     <img src={logo} style={{ width: "50px", height: "50px" }} alt="" />

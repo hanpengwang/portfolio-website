@@ -57,7 +57,7 @@ class Contact extends React.Component {
             onChange={this.handleInput}
           />
           <input type="submit" value="SEND"></input>
-          <i class="fa fa-refresh fa-spin"></i>
+          <i className="fa fa-refresh fa-spin"></i>
           <p>{this.state.sendingStatus}</p>
         </form>
       </div>

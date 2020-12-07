@@ -2,7 +2,8 @@ import React from "react";
 import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { FullPage, Slide } from "react-full-page";
+// import { FullPage, Slide } from "react-full-page";
+import ReactFullpage from "@fullpage/react-fullpage";
 
 import LoadingScreen from "./components/LoadingScreen";
 import VideoBackground from "./components/VideoBackground";
@@ -66,7 +67,7 @@ class App extends React.Component {
           <VideoBackground />
           <Switch>
             <Route exact path="/">
-              <FullPage duration={100} scrollMode={this.state.FullPageMode}>
+              {/* <FullPage duration={100} scrollMode={this.state.FullPageMode}>
                 <Slide>
                   <Home />
                 </Slide>
@@ -80,7 +81,28 @@ class App extends React.Component {
                     device={this.state.device}
                   />
                 </Slide>
-              </FullPage>
+              </FullPage> */}
+              <ReactFullpage
+                //fullpage options
+                scrollingSpeed={1000} /* Options here */
+                anchors={["home", "aboutme", "findme"]}
+                licenseKey="123"
+                render={({ state, fullpageApi }) => {
+                  return (
+                    <ReactFullpage.Wrapper>
+                      <Home />
+                      <AboutMe />
+                      <FindMe
+                        windowWidth={this.state.width}
+                        device={this.state.device}
+                        setFullPage={(bol) => {
+                          fullpageApi.setAllowScrolling(bol, "up");
+                        }}
+                      />
+                    </ReactFullpage.Wrapper>
+                  );
+                }}
+              />
             </Route>
             <Route path="/projects">
               <Projects />
