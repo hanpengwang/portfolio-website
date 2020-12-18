@@ -14,6 +14,8 @@ import FindMe from "./components/contact/FindMe";
 import Projects from "./components/projects/Projects";
 import Blogs from "./components/blogs/Blogs";
 
+import { videoFromDB } from "./config/indexDB";
+
 import "./App.css";
 
 class App extends React.Component {
@@ -23,6 +25,7 @@ class App extends React.Component {
       device: "desktop",
       width: 1500,
       FullPageMode: "full-page", // "full-page" will eable scroll effect, "normal" disables effect
+      blobUrl: "",
     };
   }
 
@@ -33,6 +36,15 @@ class App extends React.Component {
   };
 
   componentDidMount() {
+    videoFromDB()
+      .then((url) => {
+        this.setState({ blobUrl: url });
+      })
+      .catch((err) => {
+        console.log("unable to fetch background link");
+        this.setState({ blobUrl: "some url" });
+      });
+
     this.setState({
       device: mediaQuery(window.innerWidth),
       width: window.innerWidth,
@@ -64,7 +76,7 @@ class App extends React.Component {
             <LoadingScreen />
           )}
           <NavBar device={this.state.device} />
-          <VideoBackground />
+          <VideoBackground blobUrl={this.state.blobUrl} />
           <Switch>
             <Route exact path="/">
               {/* <FullPage duration={100} scrollMode={this.state.FullPageMode}>

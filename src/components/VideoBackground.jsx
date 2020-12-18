@@ -1,6 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import backgroundVideo from "../assets/background-video-circle.mp4";
+
+import { openDB, deleteDB, wrap, unwrap } from "idb";
 
 export default function VideoBackground(props) {
+  const [videoBlob, setVideoBlob] = useState("");
   useEffect(() => {
     // Update the document title using the browser API
     document.querySelector("#video-background").playbackRate = 1;
@@ -9,7 +13,7 @@ export default function VideoBackground(props) {
   return (
     <div>
       <video
-        src="https://github.com/whpskg/portfolio-website/blob/master/src/assets/background-video-circle.mp4?raw=true"
+        src={props.blobUrl}
         autoPlay
         loop
         playsInline
