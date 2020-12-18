@@ -1,10 +1,6 @@
-import React, { useEffect, useState } from "react";
-import backgroundVideo from "../assets/background-video-circle.mp4";
-
-import { openDB, deleteDB, wrap, unwrap } from "idb";
+import React, { useEffect } from "react";
 
 export default function VideoBackground(props) {
-  const [videoBlob, setVideoBlob] = useState("");
   useEffect(() => {
     // Update the document title using the browser API
     document.querySelector("#video-background").playbackRate = 1;
