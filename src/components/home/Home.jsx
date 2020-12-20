@@ -65,7 +65,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="section">
-        <ContentContainer style={{ paddingTop: "7vh" }}>
+        <ContentContainer style={{ paddingTop: "2vh" }}>
           <Typist
             cursor={{
               show: false,
@@ -126,10 +126,8 @@ class Home extends React.Component {
               </p>
               <p>
                 <span className="python-self">self</span>
-                <span>.relocation_pref = </span>
-                <span className="python-var-value">
-                  "Anywhere in the world"
-                </span>
+                <span>.reloc_pref = </span>
+                <span className="python-var-value">"Anywhere"</span>
               </p>
 
               <p className="python-staticmethod">@staticmethod</p>

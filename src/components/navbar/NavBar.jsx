@@ -8,6 +8,7 @@ export default function NavBar(props) {
     setMenuOpened(!menuOpened);
     if (props.device === "phone") {
       window.addEventListener("scroll", handleScroll);
+      window.addEventListener("touchmove", handleScroll);
     }
   };
 
@@ -18,6 +19,7 @@ export default function NavBar(props) {
 
     setMenuOpened(false);
     window.removeEventListener("scroll", handleScroll);
+    window.removeEventListener("touchmove", handleScroll);
   };
 
   let navItemsInfo = [

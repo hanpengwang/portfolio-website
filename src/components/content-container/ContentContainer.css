@@ -2,12 +2,12 @@
   border: rgba(0, 0, 0, 0) 0.001px dashed;
   margin-left: 10vw;
   height: 100vh;
-  padding: 1vh 12vw 0 12vw;
+  padding: 0 12vw 0 12vw;
 }
 
 @media screen and (max-width: 750px) {
   .content-container {
     margin-left: 0;
-    padding-top: 5vh;
+    padding-top: 1vh;
   }
 }

@@ -3,6 +3,8 @@ import React from "react";
 import ContentContainer from "../content-container/ContentContainer";
 import ProjectCard from "./ProjectCard";
 
+import staticData from "./ProjectData";
+
 import "./Projects.css";
 
 class Projects extends React.Component {
@@ -12,8 +14,8 @@ class Projects extends React.Component {
       projectData: [],
       largeMedia: "",
     };
-    this.projectAPI =
-      "https://d90832a0.us-south.apigw.appdomain.cloud/get-projects/";
+    // this.projectAPI =
+    //   "https://d90832a0.us-south.apigw.appdomain.cloud/get-projects/";
   }
 
   componentDidMount() {
@@ -47,9 +49,6 @@ class Projects extends React.Component {
                 link={x.projectLink}
                 key={i}
                 className={`slide-in ${i % 2 ? "from-right" : "from-left"}`}
-                openLargeMedia={() => {
-                  console.log("123");
-                }}
               />
             );
           })}
@@ -67,14 +66,14 @@ class Projects extends React.Component {
   }
 }
 
-const staticData = Array(9).fill({
-  id: "guess-your-age",
-  _rev: "1-86a65a925469ce21b1c974833e8cb296",
-  projectDesc: "Super fun app guesses you and your friends age :)",
-  projectLink: "https://github.com/whpskg/Full-Stack-ML",
-  projectMedia:
-    "https://github.com/whpskg/covid-19-SafeDistancing/blob/master/assets/app-demo.gif?raw=true",
-  projectName: "guess-your-age",
-});
+// const staticData = Array(9).fill({
+//   id: "guess-your-age",
+//   _rev: "1-86a65a925469ce21b1c974833e8cb296",
+//   projectDesc: "Super fun app guesses you and your friends age :)",
+//   projectLink: "https://github.com/whpskg/Full-Stack-ML",
+//   projectMedia:
+//     "https://github.com/whpskg/covid-19-SafeDistancing/blob/master/assets/app-demo.gif?raw=true",
+//   projectName: "guess-your-age",
+// });
 
 export default Projects;

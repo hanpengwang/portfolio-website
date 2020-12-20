@@ -24,6 +24,9 @@ class Contact extends React.Component {
             placeholder="Email"
             autoComplete="email"
             onChange={this.handleInput}
+            style={{
+              marginBottom: this.state.displayInvalidEmail ? "0px" : "16px",
+            }}
           />
           <>
             <label
@@ -57,8 +60,8 @@ class Contact extends React.Component {
             onChange={this.handleInput}
           />
           <input type="submit" value="SEND"></input>
-          <i className="fa fa-refresh fa-spin"></i>
-          <p>{this.state.sendingStatus}</p>
+
+          <p className="msg-status">{this.state.sendingStatus}</p>
         </form>
       </div>
     );

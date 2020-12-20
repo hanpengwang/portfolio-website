@@ -1,5 +1,6 @@
 import React from "react";
 import ContentContainer from "./content-container/ContentContainer";
+import "./AboutMe.css";
 
 class AboutMe extends React.Component {
   styles = {};
@@ -8,16 +9,25 @@ class AboutMe extends React.Component {
     return (
       <div className="section">
         <ContentContainer>
-          <h1>Who's Hanpeng?</h1>
-          <p spellCheck="true">
-            I'm software developer based in Halifax Canada, I love to build
-            software products that are used by many people. I came to canada for
-            my undergraduate studies away from my lovely hometown Shandong. Over
-            the past a few years, I have been working with different industries
-            and diversing my background. Taking new challenges and bringing
-            values to people I care become my everyday task.
-          </p>
-          <p>I am now open to opportunies either occupational or habitual.</p>
+          <div className="aboutme-text">
+            <h1>Who's Hanpeng?</h1>
+            <p spellCheck="true">
+              I'm a software developer based in Halifax-Nova Scotia. I spent
+              most of life time in China and Canada. While I'm not coding, I
+              tend to play some basketball and that's still my favorite thing
+              since little
+            </p>
+
+            <p>
+              I love to build software applications that many people can benefit
+              from, and passionate about learning and leveraging new
+              technologies.
+            </p>
+            <p>
+              I'm looking forward to connecting with people from different
+              domains and sharing ideas.
+            </p>
+          </div>
         </ContentContainer>
       </div>
     );

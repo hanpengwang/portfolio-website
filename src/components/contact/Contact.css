@@ -10,7 +10,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
+
   resize: vertical;
 }
 textarea {
@@ -21,8 +21,9 @@ textarea {
 
 input[type="submit"] {
   position: relative;
+  height: 45px;
+  top: -48px;
   float: right;
-  top: -56px;
   background-color: #4caf50;
   color: white;
   padding: 12px 20px;
@@ -61,5 +62,10 @@ input[type="submit"]:hover {
   }
   textarea {
     height: calc((300px - 48px) * 0.7);
+  }
+  .msg-status,
+  .invalid-email,
+  .invalid-content {
+    font-size: 13px;
   }
 }

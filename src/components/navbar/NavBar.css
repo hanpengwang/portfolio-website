@@ -35,7 +35,10 @@
   display: block;
   color: #00c9c8;
   padding: 16px;
+}
+.sidebar a:hover {
   text-decoration: none;
+  color: white;
 }
 
 .social-link-group {
