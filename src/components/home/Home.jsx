@@ -65,7 +65,14 @@ class Home extends React.Component {
   render() {
     return (
       <div className="section">
-        <ContentContainer style={{ paddingTop: "2vh" }}>
+        <ContentContainer
+          style={{
+            display: "flex",
+            alignItem: "center",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
           <Typist
             cursor={{
               show: false,
