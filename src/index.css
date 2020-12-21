@@ -4,13 +4,10 @@ html {
 
 body {
   margin: 0;
-  font-family: Impact, fantasy !important;
+  font-family: Garamond, serif !important;
   text-align: left !important;
   font-size: 18px !important;
-  font-weight: 400 !important;
   line-height: 1 !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .gm-style-cc {

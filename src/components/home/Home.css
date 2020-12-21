@@ -38,3 +38,11 @@
   color: #eab700;
   line-height: 1.8;
 }
+
+@media screen and (max-width: 750px) {
+  .python-code {
+    padding-top: 5vh;
+    line-height: 1;
+    font-size: 15px;
+  }
+}

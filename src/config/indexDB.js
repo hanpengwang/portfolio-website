@@ -1,5 +1,12 @@
 import { openDB } from "idb";
 export const videoFromDB = async () => {
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if (isSafari) {
+    return "https://github.com/whpskg/files/blob/main/background-video-circle.mp4?raw=true";
+  }
+
+  var myURL = window.webkitURL || window.URL;
+
   const db = await openDB("videoDB", 1, {
     upgrade(db) {
       db.createObjectStore("videoStore");
@@ -8,7 +15,7 @@ export const videoFromDB = async () => {
 
   let blob = await db.get("videoStore", 0);
   if (blob) {
-    return URL.createObjectURL(blob);
+    return myURL.createObjectURL(blob);
   } else {
     let url =
       "https://cors-anywhere.herokuapp.com/https://github.com/whpskg/files/blob/main/background-video-circle.mp4?raw=true";
@@ -21,6 +28,6 @@ export const videoFromDB = async () => {
     await db.put("videoStore", resBlob, 0);
     let blob = await db.get("videoStore", 0);
 
-    return URL.createObjectURL(blob);
+    return myURL.createObjectURL(blob);
   }
 };
