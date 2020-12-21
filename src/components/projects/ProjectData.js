@@ -1,5 +1,12 @@
 const staticData = [
   {
+    projectDesc: "My very first portfolio website",
+    projectLink: "https://github.com/whpskg/portfolio-website",
+    projectMedia:
+      "https://raw.githubusercontent.com/whpskg/files/main/portfolio-dem.gif",
+    projectName: "Portfolio+",
+  },
+  {
     projectDesc:
       "Hybrid Mobile geospatial app that helps people to get out home with confidence",
     projectLink: "https://github.com/whpskg/covid-19-SafeDistancing",
