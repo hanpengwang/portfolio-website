@@ -42,7 +42,10 @@ class App extends React.Component {
       })
       .catch((err) => {
         console.log("unable to fetch background link");
-        this.setState({ blobUrl: "some url" });
+        this.setState({
+          blobUrl:
+            "https://github.com/whpskg/files/blob/main/background-video-circle.mp4?raw=true",
+        });
       });
 
     this.setState({

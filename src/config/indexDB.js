@@ -18,7 +18,7 @@ export const videoFromDB = async () => {
     return myURL.createObjectURL(blob);
   } else {
     let url =
-      "https://cors-anywhere.herokuapp.com/https://github.com/whpskg/files/blob/main/background-video-circle.mp4?raw=true";
+      "https://api.allorigins.win/raw?url=https://github.com/whpskg/files/blob/main/background-video-circle.mp4?raw=true";
 
     let res = await fetch(url);
     if (res.status === 404) {
