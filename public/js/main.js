@@ -584,6 +584,7 @@
             $right = $container.find('div.rm-right'),
             $open = $cover.find('a.rm-button-open'),
             $close = $right.find('.rm-close');
+        $pengLogo = $container.find('.logo-peng')
 
         init = function() {
 
@@ -594,6 +595,12 @@
 
                 $open.on('click', function(event) {
                     if (!safeMod) {
+                        //trigger peng drawing
+                        $pengLogo.hide()
+
+                        setTimeout(function() { $pengLogo.show() }, 0);
+
+                        //$pengLogo.css('display', 'relative')
 
                         openMenu();
                         return false;
@@ -610,6 +617,7 @@
 
             },
             openMenu = function() {
+
                 $container.removeClass('rm-closed');
                 setTimeout(function() { $container.addClass('rm-open'); }, 10);
 
@@ -617,7 +625,7 @@
             closeMenu = function() {
 
                 $container.removeClass('rm-open rm-nodelay rm-in');
-                setTimeout(function() { $container.addClass('rm-closed') }, 850);
+                //setTimeout(function() { $container.addClass('rm-closed') }, 750);
 
             };
 
@@ -625,6 +633,6 @@
 
     })();
     // ------------------------------
-    openMenu();
+
 
 })(jQuery);

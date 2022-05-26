@@ -1,4 +1,5 @@
 import React from "react";
+import Peng from "../peng/Peng";
 
 
 class Contact extends React.Component {
@@ -11,8 +12,10 @@ class Contact extends React.Component {
                     {/* BACK COVER IMAGE */}
                     <div className="cover">
                         {/* cover-image-holder */}
-                        <div className="cover-image-holder">
-                            <h1>fsafsaf</h1>
+                        <div className="cover-image-holder-back">
+                            <div>
+                                <Peng />
+                            </div>
                             {/* <img src="images/site/cover-2.jpg" alt="cover-image" />
                              */}
                         </div>

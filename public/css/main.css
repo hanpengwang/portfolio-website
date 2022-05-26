@@ -1661,7 +1661,8 @@ img.ajax-loader {
 /* COVER PAGE */
 
 .cover-image-holder {
-    display: none;
+    position: fixed;
+    z-index: -10;
 }
 
 .cover {

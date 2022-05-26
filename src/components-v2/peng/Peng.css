@@ -1,0 +1,147 @@
+.logo-peng {}
+
+.st0 {
+    fill: none;
+    stroke: black;
+    stroke-width: 95;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dashoffset: 0;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+#line-peng-1 {
+    clip-path: url(#peng-1);
+    stroke-dasharray: 274.9557189941406;
+    animation-name: draw-peng-1;
+    transform: scale(1.003, 1);
+}
+
+@keyframes draw-peng-1 {
+    0% {
+        stroke-dashoffset: 274.9557189941406;
+    }
+    30% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#line-peng-2 {
+    clip-path: url(#peng-2);
+    stroke-dasharray: 948.9453125;
+    animation-name: draw-peng-2;
+    stroke-width: 50;
+}
+
+@keyframes draw-peng-2 {
+    0%,
+    30% {
+        stroke-dashoffset: 948.9453125;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#line-peng-3 {
+    clip-path: url(#peng-3);
+    stroke-dasharray: 65.38600158691406;
+    animation-name: draw-peng-3;
+    stroke-width: 100;
+    transform: scaleX(1.001);
+}
+
+@keyframes draw-peng-3 {
+    0%,
+    50% {
+        stroke-dashoffset: 65.38600158691406;
+    }
+    55% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#line-peng-4 {
+    clip-path: url(#peng-4);
+    stroke-dasharray: 39.623714447021484;
+    animation-name: draw-peng-4;
+    stroke-width: 25;
+    transform: scale(1.00001, 1);
+}
+
+@keyframes draw-peng-4 {
+    0%,
+    55% {
+        stroke-dashoffset: 39.623714447021484;
+    }
+    60% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#line-peng-5 {
+    clip-path: url(#peng-5);
+    stroke-dasharray: 35.49266815185547;
+    animation-name: draw-peng-5;
+    stroke-width: 20;
+}
+
+@keyframes draw-peng-5 {
+    0%,
+    60% {
+        stroke-dashoffset: 35.49266815185547;
+    }
+    65% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#line-peng-6 {
+    clip-path: url(#peng-6);
+    stroke-dasharray: 292.5987548828125;
+    animation-name: draw-peng-6;
+}
+
+@keyframes draw-peng-6 {
+    0%,
+    65% {
+        stroke-dashoffset: 292.5987548828125;
+    }
+    75% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#line-peng-7 {
+    clip-path: url(#peng-7);
+    stroke-dasharray: 58.98342514038086;
+    animation-name: draw-peng-7;
+}
+
+@keyframes draw-peng-7 {
+    0%,
+    75% {
+        stroke-dashoffset: 58.98342514038086;
+    }
+    85% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#line-peng-8 {
+    clip-path: url(#peng-8);
+    stroke-dasharray: 537.2975463867188;
+    animation-name: draw-peng-8;
+}
+
+@keyframes draw-peng-8 {
+    0%,
+    85% {
+        stroke-dashoffset: 537.2975463867188;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
