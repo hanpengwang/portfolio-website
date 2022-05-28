@@ -18,66 +18,46 @@ class Resume extends React.Component {
               <h3><span>EMPLOYMENT</span></h3>
               {/* EMPLOYMENT */}
               <div className="history-group">
-                {/* .history-unit */}
                 <div className="history-unit">
-                  <h4 className="work-time">2021-03 To Now</h4>
+                  <h4 className="work-time">2021 To Now</h4>
                   <div className="work-desc">
-                    <h4>Lead UX Designer</h4>
-                    <h5>Apple Inc.</h5>
-                    <p>Worked in so many projects for best clients around the world and i get so many experiences based on my job.</p>
+                    <h4>Software Engineer</h4>
+                    <h5>Morningstar</h5>
+                    <p>Worked in so many projects for best clients around the 
+                       world and i get so many experiences based on my job.</p>
                   </div>
                 </div>
-                {/* .history-unit */}
-                {/* .history-unit */}
                 <div className="history-unit">
-                  <h4 className="work-time">2007 - 2011</h4>
+                  <h4 className="work-time">2019 - 2020</h4>
                   <div className="work-desc">
-                    <h4>Level Designer</h4>
-                    <h5>Crytek Inc.</h5>
-                    <p>Also i have designed levels of some cool games everyone plays.</p>
+                    <h4>Other Postgraduate Exp.</h4>
+                    <h5>Various</h5>
+                    <p>Did some summer research with faculty and bunch of course projects related to </p>
                   </div>
                 </div>
-                {/* .history-unit */}
-                {/* .history-unit */}
                 <div className="history-unit">
-                  <h4 className="work-time">2002 - 2007</h4>
+                  <h4 className="work-time">2014 - 2019</h4>
                   <div className="work-desc">
-                    <h4>Web Developer</h4>
-                    <h5>Creative Agency</h5>
-                    <p>Worked in so many projects for best clients around the world.</p>
+                    <h4>Undergrad. Exp.</h4>
+                    <p>Did research projects with facaulty</p>
                   </div>
                 </div>
-                {/* .history-unit */}
               </div>
-              {/* EMPLOYMENT */}
               <h3><span>EDUCATION</span></h3>
               {/* EDUCATION */}
               <div className="history-group">
-                {/* .history-unit */}
                 <div className="history-unit">
-                  <h4 className="work-time">2000 - 2002</h4>
+                  <h4 className="work-time">2014 - 2019</h4>
                   <div className="work-desc">
-                    <h4>Phd Computer Science</h4>
-                    <h5>MIT</h5>
-                    <p>Studied Phd. in MIT on Computer Science.</p>
+                    <h4>Bachelor's Degree</h4>
+                    <h5>Saint Mary's University @ Halifax</h5>
+                    <p>Studied Finance and Maths </p>
                   </div>
                 </div>
-                {/* .history-unit */}
-                {/* .history-unit */}
-                <div className="history-unit">
-                  <h4 className="work-time">1996 - 2000</h4>
-                  <div className="work-desc">
-                    <h4>Physics</h4>
-                    <h5>Princeton University</h5>
-                    <p>I get my Bachelor Degree in Princeton University.</p>
-                  </div>
-                </div>
-                {/* .history-unit */}
               </div>
-              {/* EDUCATION */}
               {/* DOWNLOAD BUTTON */}
               <div className="launch">
-                <a href="#" className="btn">DOWNLOAD CV</a>
+                <a href="images/site/cover.jpg" download='HanpengWang-resume.jpg' className="btn">DOWNLOAD CV</a>
               </div>
               {/* DOWNLOAD BUTTON */}
               <h3><span>DEVELOPMENT SKILLS</span></h3>

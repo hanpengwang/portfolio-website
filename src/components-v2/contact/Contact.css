@@ -1,0 +1,13 @@
+.icon-copy{
+    margin-left: 3px;
+}
+
+.icon-copy:hover {
+    cursor: pointer
+}
+
+.icon-copy:hover:after{
+    margin-left: 3px;
+    position: relative;
+    content: 'click to copy'
+}

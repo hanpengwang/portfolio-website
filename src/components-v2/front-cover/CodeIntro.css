@@ -1,0 +1,48 @@
+.python-staticmethod,
+.python-def {
+    margin-left: 30px;
+}
+
+.python-pass,
+.python-self {
+    margin-left: 60px;
+}
+
+.python-staticmethod,
+.python-argSelf,
+.python-self {
+    font-style: italic;
+    color: #ec87e4;
+}
+
+.python-class,
+.python-pass,
+.python-def {
+    color: #00c9c8;
+}
+
+.python-var-value {
+    color: white;
+}
+
+.python-inheritObject {
+    color: #81a2be;
+}
+
+.python-input-code,
+.python-code p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.python-code {
+    color: #eab700;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 750px) {
+    .python-code {
+        line-height: 1;
+        font-size: 15px;
+    }
+}
