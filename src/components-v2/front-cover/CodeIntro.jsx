@@ -11,8 +11,8 @@ class CodeIntro extends React.Component {
           cursor={{
             show: false,
           }}
-          avgTypingDelay={0}
-          stdTypingDelay={0}
+          avgTypingDelay={5}
+          stdTypingDelay={20}
           onCharacterTyped={(char) => {}}
           onTypingDone={this.handleTypingDone}
         >
@@ -60,7 +60,7 @@ class CodeIntro extends React.Component {
             <p>
               <span className="python-self">self</span>
               <span>.cur_res = </span>
-              <span className="python-var-value">"Canada, NS"</span>
+              <span className="python-var-value">"Canada"</span>
             </p>
             <p>
               <span className="python-self">self</span>
@@ -68,16 +68,18 @@ class CodeIntro extends React.Component {
               <span className="python-var-value">"Anywhere"</span>
             </p>
             <div>
-              <p className="python-staticmethod">@staticmethod</p>
               <p>
-                <span className="python-def">def start</span>
-                <span>():</span>
+                <span className="python-def">def </span>
+                <span>
+                  start(<span className="python-argSelf">self</span>):
+                </span>
               </p>
-              <p className="python-pass">
-                while awake: <br />
-                <p className="python-def">eat()</p>
-                <p className="python-def">code()</p>
-                <p className="python-def">sleep_good()</p>
+              <p className="python-pass python-var-value">
+                <span className="code-green">while</span>
+                <span className="code-orange">&nbsp;awake:</span> <br />
+                <p className="python-def code-orange">eat()</p>
+                <p className="python-def code-orange">code()</p>
+                <p className="python-def code-orange">sleep_good()</p>
               </p>
             </div>
           </div>

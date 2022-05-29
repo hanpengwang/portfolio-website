@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./App.css";
 import Contact from "./components-v2/contact/Contact";
@@ -26,6 +25,5 @@ class App extends React.Component {
     );
   }
 }
-
 
 export default App;

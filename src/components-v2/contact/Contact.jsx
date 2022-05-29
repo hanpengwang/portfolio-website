@@ -10,9 +10,7 @@ class Contact extends React.Component {
           {/* BACK COVER IMAGE */}
           <div className="cover">
             <div className="cover-image-holder-back">
-              <div>
-                <Peng />
-              </div>
+              <Peng />
             </div>
           </div>
         </div>

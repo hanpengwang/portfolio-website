@@ -747,11 +747,11 @@ textarea.error {
 
 .stamp img {
     display: block;
-    width: 94px;
-    height: 114px;
+    width: 115px;
+    height: 147px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: -22px;
+    left: 6px;
 }
 
 .letter {

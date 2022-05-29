@@ -8,7 +8,7 @@ class ContactForm extends React.Component {
         {/* LETTER */}
         <div className="letter cf">
           <div className="stamp">
-            <img src="images/site/stamp-image.png" alt="stamp" />
+            <img src="images/site/face-cover.png" alt="stamp" />
           </div>
           <div className="letter-info">
             <h4>Hanpeng Wang</h4>

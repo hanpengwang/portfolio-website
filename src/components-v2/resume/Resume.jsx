@@ -3,19 +3,24 @@ import React from "react";
 class Resume extends React.Component {
   render() {
     return (
-        <div id="resume" className="rm-back page">
+      <div id="resume" className="rm-back page">
         {/* .antiscroll-wrap */}
         <div className="antiscroll-wrap">
           {/* .antiscroll-inner */}
           <div className="antiscroll-inner">
             {/* CONTENT */}
             <div className="content">
-              <h2><span>RESUME</span></h2>
-              <h4 className="about-text">I am a Software Engineer, specialfsafasfasfasfasfasfsa
-              fsafsafsa
-              
-              fasfsafsafsafs developed the general theory of relativity, effecting a revolution in physics.</h4>
-              <h3><span>EMPLOYMENT</span></h3>
+              <h2>
+                <span>RESUME</span>
+              </h2>
+              <h4 className="about-text">
+                I am a Software Engineer, specialfsafasfasfasfasfasfsa fsafsafsa
+                fasfsafsafsafs developed the general theory of relativity,
+                effecting a revolution in physics.
+              </h4>
+              <h3>
+                <span>EMPLOYMENT</span>
+              </h3>
               {/* EMPLOYMENT */}
               <div className="history-group">
                 <div className="history-unit">
@@ -23,8 +28,10 @@ class Resume extends React.Component {
                   <div className="work-desc">
                     <h4>Software Engineer</h4>
                     <h5>Morningstar</h5>
-                    <p>Worked in so many projects for best clients around the 
-                       world and i get so many experiences based on my job.</p>
+                    <p>
+                      Worked in so many projects for best clients around the
+                      world and i get so many experiences based on my job.
+                    </p>
                   </div>
                 </div>
                 <div className="history-unit">
@@ -32,7 +39,10 @@ class Resume extends React.Component {
                   <div className="work-desc">
                     <h4>Other Postgraduate Exp.</h4>
                     <h5>Various</h5>
-                    <p>Did some summer research with faculty and bunch of course projects related to </p>
+                    <p>
+                      Did some summer research with faculty and bunch of course
+                      projects related to{" "}
+                    </p>
                   </div>
                 </div>
                 <div className="history-unit">
@@ -43,7 +53,9 @@ class Resume extends React.Component {
                   </div>
                 </div>
               </div>
-              <h3><span>EDUCATION</span></h3>
+              <h3>
+                <span>EDUCATION</span>
+              </h3>
               {/* EDUCATION */}
               <div className="history-group">
                 <div className="history-unit">
@@ -57,10 +69,18 @@ class Resume extends React.Component {
               </div>
               {/* DOWNLOAD BUTTON */}
               <div className="launch">
-                <a href="images/site/cover.jpg" download='HanpengWang-resume.jpg' className="btn">DOWNLOAD CV</a>
+                <a
+                  href="images/site/cover.jpg"
+                  download="HanpengWang-resume.jpg"
+                  className="btn"
+                >
+                  DOWNLOAD CV
+                </a>
               </div>
               {/* DOWNLOAD BUTTON */}
-              <h3><span>DEVELOPMENT SKILLS</span></h3>
+              <h3>
+                <span>DEVELOPMENT SKILLS</span>
+              </h3>
               {/* DEV SKILLS */}
               <div className="skill-group">
                 {/* .skill-unit */}
@@ -97,7 +117,9 @@ class Resume extends React.Component {
                 {/* .skill-unit */}
               </div>
               {/* DEV SKILLS */}
-              <h3><span>DESIGN SKILLS</span></h3>
+              <h3>
+                <span>DESIGN SKILLS</span>
+              </h3>
               {/* DESIGN SKILLS */}
               <div className="skill-group">
                 {/* .skill-unit */}
@@ -126,15 +148,22 @@ class Resume extends React.Component {
                 {/* .skill-unit */}
               </div>
               {/* DESIGN SKILLS */}
-              <h3><span>TESTIMONIALS</span></h3>
+              <h3>
+                <span>TESTIMONIALS</span>
+              </h3>
               {/* TESTIMONIALS */}
               <div className="testo-group">
                 {/* Testimonial */}
                 <div className="testo">
                   <img src="images/site/testo-01.jpg" alt="someone" />
                   <div className="text">
-                    <h4>Albert Einstein <span>CEO / Gravity Inc.</span></h4>
-                    <p>He is a great and hardworking guy. I am so proud of i have him as my asistant. He helped me so much.</p>
+                    <h4>
+                      Albert Einstein <span>CEO / Gravity Inc.</span>
+                    </h4>
+                    <p>
+                      He is a great and hardworking guy. I am so proud of i have
+                      him as my asistant. He helped me so much.
+                    </p>
                   </div>
                 </div>
                 {/* Testimonial */}
@@ -142,8 +171,13 @@ class Resume extends React.Component {
                 <div className="testo">
                   <img src="images/site/testo-02.jpg" alt="someone" />
                   <div className="text">
-                    <h4>Walter White <span>Chemist / Freelancer</span></h4>
-                    <p>He was a great co-worker and a friend. I would't be where i am without his support.</p>
+                    <h4>
+                      Walter White <span>Chemist / Freelancer</span>
+                    </h4>
+                    <p>
+                      He was a great co-worker and a friend. I would't be where
+                      i am without his support.
+                    </p>
                   </div>
                 </div>
                 {/* Testimonial */}
@@ -151,35 +185,49 @@ class Resume extends React.Component {
                 <div className="testo">
                   <img src="images/site/testo-03.jpg" alt="someone" />
                   <div className="text">
-                    <h4>Dexter Morgan <span>Lab Geek / Miami Metro</span></h4>
+                    <h4>
+                      Dexter Morgan <span>Lab Geek / Miami Metro</span>
+                    </h4>
                     <p>He is ok.</p>
                   </div>
                 </div>
                 {/* Testimonial */}
               </div>
               {/* TESTIMONIALS */}
-              <h3><span>SERVICES</span></h3>
+              <h3>
+                <span>Interests</span>
+              </h3>
               {/* SERVICES */}
               <div className="service-group">
                 {/* service */}
                 <div className="service">
                   <i className="icon-laptop" />
                   <h4>Web Design</h4>
-                  <p>I design super cool websites. It is a long established fact that a reader will be distracted by the readable content. </p>
+                  <p>
+                    I design super cool websites. It is a long established fact
+                    that a reader will be distracted by the readable content.{" "}
+                  </p>
                 </div>
                 {/* service */}
                 {/* service */}
                 <div className="service">
                   <i className="icon-tablet" />
                   <h4>Mobile Development</h4>
-                  <p>I can develop iOS and Android apps. It is a long established fact that a reader will be distracted by the readable content. </p>
+                  <p>
+                    I can develop iOS and Android apps. It is a long established
+                    fact that a reader will be distracted by the readable
+                    content.{" "}
+                  </p>
                 </div>
                 {/* service */}
                 {/* service */}
                 <div className="service">
-                  <i className="icon-globe" />
+                  <i className="icon-cloud" />
                   <h4>Social Media</h4>
-                  <p>I am a social media expert. It is a long established fact that a reader will be distracted by the readable content. </p>
+                  <p>
+                    I am a social media expert. It is a long established fact
+                    that a reader will be distracted by the readable content.{" "}
+                  </p>
                 </div>
                 {/* service */}
               </div>
@@ -195,7 +243,5 @@ class Resume extends React.Component {
     );
   }
 }
-
-
 
 export default Resume;
