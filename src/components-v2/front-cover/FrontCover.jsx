@@ -12,10 +12,7 @@ class FrontCover extends React.Component {
             <div className="cover">
               {/* cover-image-holder */}
               <div className="cover-image-holder">
-                <img
-                  src="https://c.tenor.com/C6qR8z_eVGEAAAAd/star-wars-galaxy.gif"
-                  alt="cover-image"
-                />
+                <img src="images/site/front-cover.gif" alt="cover-image" />
               </div>
               <h1>Hanpeng Wang</h1>
               <h2>Software Engineer & Technology Consultant</h2>

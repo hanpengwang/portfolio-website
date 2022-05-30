@@ -3986,6 +3986,12 @@ blockquote cite {
 }
 
 
+/* customized stuuf */
+
+.light-box-rediretable:hover {
+    cursor: pointer;
+}
+
 /* TABLETS */
 
 @media screen and (min-width: 768px) {
@@ -4061,3 +4067,4 @@ blockquote cite {
         padding-top: 2em;
     }
 }
+

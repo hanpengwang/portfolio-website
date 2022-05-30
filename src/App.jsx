@@ -20,6 +20,23 @@ class App extends React.Component {
             <Portfolio />
             <Contact />
           </div>
+
+          {/* footer */}
+          <div
+            style={{
+              position: "fixed",
+              left: 0,
+              bottom: 0,
+              width: "100%",
+              color: "#00c9c8",
+              textAlign: "center",
+            }}
+          >
+            <p>
+              <i class="fal fa-copyright"></i>
+              2022 Hanpeng Wang
+            </p>
+          </div>
         </div>
       </>
     );

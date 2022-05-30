@@ -28,7 +28,9 @@ class PortfolioItem extends React.Component {
             <a {...anchorAttrs} />
           </div>
         </div>
-        <h4>{itemTitle}</h4>
+        <h4>
+          {itemTitle}
+          </h4>
         <p className="category">{itemDesc}</p>
       </div>
     );

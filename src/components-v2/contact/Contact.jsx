@@ -8,7 +8,15 @@ class Contact extends React.Component {
       <div className="rm-right">
         <div className="rm-front">
           {/* BACK COVER IMAGE */}
-          <div className="cover">
+          <div
+            className="cover"
+            style={{
+              backgroundColor: "#E3E3E3",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
             <div className="cover-image-holder-back">
               <Peng />
             </div>
@@ -35,12 +43,12 @@ class Contact extends React.Component {
                 </h3>
                 <ul className="social">
                   <li>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/wanghanpeng/" target="__blank">
                       <i className="icon-linkedin"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="https://github.com/whpskg" target="__blank">
                       <i className="icon-github"></i>
                     </a>
                   </li>

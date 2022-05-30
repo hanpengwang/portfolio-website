@@ -41,6 +41,15 @@
         $('.cover').each(function(index, element) {
             $(this).css('background-image', 'url(' + $(this).find('.cover-image-holder img').attr('src') + ')');
         });
+
+        // $('.cover-front').each(function(index, element) {
+        //     $(this).css('background-color', 'green');
+        // });
+
+        // $('.cover-back').each(function(index, element) {
+        //     $(this).css('background-color', 'grey');
+        // });
+
         // ------------------------------
 
 
@@ -399,13 +408,14 @@
     // ------------------------------
     // LIGHTBOX
     function setupLigtbox() {
-
+       
         //html5 validate fix
         $('.lightbox').each(function(index, element) {
             $(this).attr('rel', $(this).attr('data-lightbox-gallery'));
         });
 
         if ($("a[rel^='fancybox']").length) {
+            // console.log(redirect.attr('data-lightbox-gallery'))
             $("a[rel^='fancybox']").fancybox({
                 centerOnScroll: true,
                 padding: 0,
@@ -422,10 +432,24 @@
                     $('#rm-container').removeClass('rm-in');
                 },
                 onComplete: function() {
+                    let parentThis = $(this)
                     if ($(this).attr('href').indexOf("soundcloud.com") >= 0) {
                         $('#fancybox-content').height(166);
                     }
-                }
+
+                    $('.lightbox').each(function(index, element) {
+                       if ($(this).attr('href')==parentThis.attr('href') && $(this).attr('data-redirect')) {
+                         let redirectUrl = $(this).attr('data-redirect')
+                         $('#fancybox-img').addClass('light-box-rediretable')
+                         $('#fancybox-img').on('click', function(){
+                            window.open(redirectUrl);
+                         })
+                       }
+
+                       
+                   
+                    });
+                },
             });
         }
     }
