@@ -156,7 +156,7 @@ export default PortfolioItem;
 //                   <img src="images/portfolio/10.jpg" alt="portfolio-post" />
 //                   <div className="mask">
 //                     <a
-//                       href="http://themeforest.net/user/pixelwars"
+//      
 //                       target="_blank"
 //                     />
 //                   </div>
