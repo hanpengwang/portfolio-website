@@ -149,8 +149,8 @@ class Resume extends React.Component {
               {/* DOWNLOAD BUTTON */}
               <div className="launch">
                 <a
-                  href="images/site/cover.jpg"
-                  download="HanpengWang-resume.jpg"
+                  href="images/site/resume.pdf"
+                  download="HanpengWang-resume.pdf"
                   className="btn"
                 >
                   DOWNLOAD CV
