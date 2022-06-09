@@ -1,5 +1,4 @@
 import React from "react";
-import resumeFile from '../../assets/Resume.pdf'
 
 class Resume extends React.Component {
   constructor(props) {
@@ -150,8 +149,8 @@ class Resume extends React.Component {
               {/* DOWNLOAD BUTTON */}
               <div className="launch">
                 <a
-                  href={resumeFile}
-                  download="HanpengWang-resume.pdf"
+                  href='https://github.com/whpskg/files/raw/main/Hanpeng.Wang-Resume.pdf'
+                  download="test.pdf"
                   className="btn"
                 >
                   DOWNLOAD CV
