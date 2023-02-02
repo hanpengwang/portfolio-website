@@ -97,7 +97,17 @@ class Resume extends React.Component {
               {/* EMPLOYMENT */}
               <div className="history-group">
                 <div className="history-unit">
-                  <h4 className="work-time">2021 To Now</h4>
+                  <h4 className="work-time">2022 To Now</h4>
+                  <div className="work-desc">
+                    <h4>Software Engineer</h4>
+
+                    <p>
+                      Engineering at Square, building modern AI based financial underwriting system
+                    </p>
+                  </div>
+                </div>
+                <div className="history-unit">
+                  <h4 className="work-time">2021 To 2022</h4>
                   <div className="work-desc">
                     <h4>Software Engineer</h4>
 
@@ -149,7 +159,7 @@ class Resume extends React.Component {
               {/* DOWNLOAD BUTTON */}
               <div className="launch">
                 <a
-                  href='https://github.com/whpskg/files/raw/main/Hanpeng.Wang-Resume.pdf'
+                  href="https://github.com/whpskg/files/raw/main/Hanpeng.Wang-Resume.pdf"
                   download="test.pdf"
                   className="btn"
                 >
